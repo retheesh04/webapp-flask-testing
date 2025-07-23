@@ -24,7 +24,7 @@ jobs:
     - name: Build, Tag, and Push Docker Image
       id: build_image
       env:
-        ECR_REGISTRY: ${{ steps.login-ecr.ouputs.registry}}
+        ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry}}
         ECR_REPOSITORY: dev
         IMAGE_TAG: latest
       run: |
